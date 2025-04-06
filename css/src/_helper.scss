@@ -1,0 +1,19 @@
+@function map-get-negative($map) {
+	$result: ();
+	@each $key, $value in $map {
+		@if $key != 0 {
+			$result: map-merge(
+				$result,
+				(
+					"n#{$key}": -$value,
+				)
+			);
+		}
+	}
+	@return $result;
+}
+
+$base-font-size: 16px;
+@function rem($pixels) {
+  @return ($pixels / $base-font-size) * 1rem;
+}

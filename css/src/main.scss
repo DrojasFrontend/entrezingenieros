@@ -1,0 +1,32 @@
+
+
+@import './variables';
+
+// 1. Incluye las funciones y variables de Bootstrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/modal"; 
+
+// 2. Incluye tu archivo de utilidades personalizado
+@import "helper";
+@import "utilities";
+@import "typography";
+@import "buttons";
+
+// 3. Componentes de Bootstrap necesarios
+@import "~bootstrap/scss/transitions";  // Necesario para las animaciones del carousel
+@import "~bootstrap/scss/carousel";
+
+// 4. Incluye el grid y otros componentes que necesites
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/forms";
+
+// 5. Genera las clases de utilidad
+@import "~bootstrap/scss/utilities/api";
+
+
+@import './styles.scss';
+
