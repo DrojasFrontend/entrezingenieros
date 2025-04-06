@@ -39,7 +39,12 @@ $imagen_id_mobile = !empty($grupo_mapa['imagen_mobile']['ID']) ? intval($grupo_m
                 <?php endif; ?>
 
                 <?php if (!empty($detalle)) : ?>
-                  <p class="fs-lg-2 fs-4 fw-medium customContador"><?php echo $detalle; ?></p>
+                  <p class="fs-lg-2 fs-4 fw-medium">
+                    +
+                    <span class="customContador">
+                      <?php echo $detalle; ?>
+                    </span>
+                  </p>
                 <?php endif; ?>
               </div>
             <?php } ?>

@@ -41,7 +41,7 @@ export function inicializarContadores() {
       unidadHTML = $unidad[0].outerHTML;
     }
 
-    $elemento.html("+ 0 " + unidadHTML);
+    $elemento.html("0 " + unidadHTML);
 
     const duracion = 2000;
     const pasos = duracion / 30;
@@ -52,10 +52,10 @@ export function inicializarContadores() {
       valorActual += incrementoPorPaso;
 
       if (valorActual >= valorFinal) {
-        $elemento.html("+ " + formatearNumero(valorFinal) + " " + unidadHTML);
+        $elemento.html(formatearNumero(valorFinal) + " " + unidadHTML);
         clearInterval(intervalo);
       } else {
-        $elemento.html("+ " + formatearNumero(Math.floor(valorActual)) + " " + unidadHTML);
+        $elemento.html(formatearNumero(Math.floor(valorActual)) + " " + unidadHTML);
       }
     }, 30);
   }

@@ -34,7 +34,12 @@ $titulo                   = !empty($grupo_nuestros_servicios['titulo']) ? esc_ht
                 </div>
                 <p class="font-poppins fs-p-small"><?php echo esc_html__('Hemos alcanzado:', ''); ?></p>
                 <?php if (!empty($cantidad)) : ?>
-                  <p class="d-flex justify-center fs-lg-1 fs-2 customContador">+ <?php echo $cantidad; ?> <span class="fs-p-small fw-semibold">m²</span></p>
+                  <p class="d-flex justify-center fs-lg-1 fs-2">+ 
+                    <span class="customContador">
+                      <?php echo $cantidad; ?> 
+                    </span>
+                    <span class="fs-p-small fw-semibold">m²</span>
+                  </p>
                 <?php endif; ?>
               </div>
               <div class="flip-card-back d-flex flex-column justify-start px-18 py-24 shadow-card rounded bg-primary-100">

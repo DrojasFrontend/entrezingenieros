@@ -28,7 +28,7 @@ $items          = !empty($grupo_historia['items']) ? $grupo_historia['items'] : 
         ?>
           <div class="col-12 <?php echo $paddingTop; ?>">
             <div class="<?php echo $textAlign; ?>">
-              <p class="fs-lg-1 fs-2 text-primary-150 mb-12 wow fadeInUp"><?php echo $titulo; ?></p>
+              <p class="fs-lg-1 fs-2 text-primary-150 mb-12 wow fadeInUp customContador"><?php echo $titulo; ?></p>
               <div class="d-flex <?php echo $justifyContent; ?>">
                 <div class="col-lg-8 col-12 position-relative">
                   <div class="line line-azul py-6 wow fadeInUp"></div>
