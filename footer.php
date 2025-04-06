@@ -135,7 +135,7 @@ $grupo_newsletter = get_field('grupo_newsletter', 'option');
   <?php wp_footer(); ?>
   <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css">
-  <!-- <script>
+  <script>
     wow = new WOW(
       {
         animateClass: 'animated',
@@ -151,6 +151,6 @@ $grupo_newsletter = get_field('grupo_newsletter', 'option');
       section.className = 'section--purple wow fadeInDown';
       this.parentNode.insertBefore(section, this);
     };
-  </script> -->
+  </script>
 </body>
 </html>

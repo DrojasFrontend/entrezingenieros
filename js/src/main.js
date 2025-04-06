@@ -1,9 +1,10 @@
 import { Modal } from 'bootstrap'
 import {} from "./menu-init";
-import {} from "./menu-init";
+import { inicializarContadores } from "./contador";
 import {} from "./validacion-formulario-init";
 import {} from "./filtro-proyectos-init";
-import {} from "./search-init";
+import {} from "./search-init";	
+
 import {
 	initHeroSwiper,
 	initBlogSwiper,
@@ -12,7 +13,6 @@ import {
 	initGaleriaSwiper,
 	initEquipoSwiper,
 } from "./swiper-init";
-import { initLoadMore } from "./load-init";
 import { initClickableCards } from "./card-click-init";
 
 
@@ -38,7 +38,7 @@ let Main = {
 				initEquipoSwiper();
 			}
 			initClickableCards(".clickeable");
-			initLoadMore();
+			inicializarContadores();
 		});
 	},
 };

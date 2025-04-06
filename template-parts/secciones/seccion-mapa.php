@@ -15,7 +15,7 @@ $imagen_id_mobile = !empty($grupo_mapa['imagen_mobile']['ID']) ? intval($grupo_m
 <section class="position-relative d-flex flex-column-reverse px-18 pt-xl-60 pb-xl-100 py-36 gapxl-0 gap-24 bg-white overflow-hidden">
   <div class="container position-relative px-0">
     <div class="row">
-      <div class="col-lg-6 col-12">
+      <div class="col-lg-6 col-12 position-relative z-1">
         <?php if($titulo) : ?>
           <h2 class="col-lg-9 col-12 fs-lg-2 fs-4 mb-6 wow fadeInUp" data-wow-delay="1.1s"><?php echo $titulo; ?></h2>
         <?php endif; ?>
@@ -39,7 +39,7 @@ $imagen_id_mobile = !empty($grupo_mapa['imagen_mobile']['ID']) ? intval($grupo_m
                 <?php endif; ?>
 
                 <?php if (!empty($detalle)) : ?>
-                  <p class="fs-lg-2 fs-4 fw-medium"><?php echo $detalle; ?></p>
+                  <p class="fs-lg-2 fs-4 fw-medium customContador"><?php echo $detalle; ?></p>
                 <?php endif; ?>
               </div>
             <?php } ?>
