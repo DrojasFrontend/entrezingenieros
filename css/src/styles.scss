@@ -845,6 +845,21 @@ main {
 		img {
 			@extend .rounded, .img-fluid, .shadow-card;
 		}
+
+		ul, ol {
+			@extend .ps-24, .mb-24;
+
+			li {
+				list-style: disc;
+				@extend .font-poppins, .fs-p, .fw-regular;
+			}
+		}
+		
+		ol {
+			li {
+				list-style: decimal;
+			}
+		}
 	}
 
 	&SeccionEtapas {
