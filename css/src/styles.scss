@@ -843,7 +843,7 @@ main {
 		}
 
 		img {
-			@extend .rounded, .img-fluid, .shadow-card;
+			@extend .rounded, .shadow-card;
 		}
 
 		ul, ol {
@@ -854,7 +854,7 @@ main {
 				@extend .font-poppins, .fs-p, .fw-regular;
 			}
 		}
-		
+
 		ol {
 			li {
 				list-style: decimal;
