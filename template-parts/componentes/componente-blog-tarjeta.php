@@ -4,7 +4,7 @@
 <article class="clickeable">  
   <div class="d-flex mb-18 overflow-hidden rounded">
     <?php if (has_post_thumbnail()) : ?>
-      <img class="rounded-6 img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
+      <img class="rounded-6 img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
     <?php else : ?>
       <img class="rounded-6 img-fluid" src="<?php echo THEME_IMG . 'post-1.png'?>" alt="<?php echo esc_attr(get_the_title()); ?>">
     <?php endif; ?>
