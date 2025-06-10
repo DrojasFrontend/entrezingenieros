@@ -808,8 +808,31 @@ main {
 	}
 
 	&Modal {
+		.swiper-wrapper {
+			align-items: center;
+		}
+
 		p {
 			@extend .text-white;
+		}
+
+		.autor {
+			right: 20px;
+			bottom: 40px;
+			text-decoration: underline;
+		}
+
+		.nombre-proyecto {
+			padding-right: 20px;
+			text-decoration: underline;
+		}
+
+		ul { 
+			@extend .ps-24;
+		}
+
+		li {
+			list-style: disc;
 		}
 	}
 

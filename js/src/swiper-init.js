@@ -137,7 +137,18 @@ export const initGaleriaSwipers = () => {
 		const modalId = modal.getAttribute('id');
 		const postId = modalId.replace('modalProyecto-', '');
 
-		const swiper = new Swiper(`#${modalId} .galeriaSwiper`, {
+		const galeriaSwiperEl = modal.querySelector('.galeriaSwiper');
+		if (!galeriaSwiperEl) return;
+
+		// Destruir Swiper anterior si existe
+		if (galeriaSwiperEl.swiper) {
+			galeriaSwiperEl.swiper.destroy(true, true);
+		}
+
+		const slidesCount = galeriaSwiperEl.querySelectorAll('.swiper-slide').length;
+		const useLoop = slidesCount > 1;
+
+		const swiper = new Swiper(galeriaSwiperEl, {
 			modules: [Pagination, Navigation, Autoplay],
 			slidesPerView: 1,
 			spaceBetween: 24,
@@ -147,7 +158,7 @@ export const initGaleriaSwipers = () => {
 				disableOnInteraction: false,
 			},
 			speed: 500,
-			loop: true,
+			loop: useLoop,
 			navigation: {
 				nextEl: `.swiper-button-next-galeria-${postId}`,
 				prevEl: `.swiper-button-prev-galeria-${postId}`,

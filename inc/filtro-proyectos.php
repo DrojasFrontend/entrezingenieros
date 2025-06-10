@@ -44,7 +44,7 @@ function filter_projects_callback() {
         while ($query->have_posts()) {
             $query->the_post();
             $html .= '<div class="d-none col-12 col-lg-4 py-18 postItem">';
-            $html .= '<article id="post-' . get_the_ID() . '" class="position-relative customHoverTarjetaAzul shadow-card rounded overflow-hidden wow fadeInUp" data-wow-delay="1.' . $key . 's">';
+            $html .= '<article id="post-' . get_the_ID() . '" class="position-relative customHoverTarjetaAzul shadow-card rounded overflow-hidden wow fadeInUp" data-wow-delay="0.' . $key . 's">';
             
             if (has_post_thumbnail()) {
                 $html .= '<div class="d-flex">';
@@ -57,7 +57,7 @@ function filter_projects_callback() {
             
             $sector_terms = get_the_terms(get_the_ID(), 'sector');
             if ($sector_terms && !is_wp_error($sector_terms)) {
-                $html .= '<p class="font-poppins fs-p text-white">Sector: ' . esc_html($sector_terms[0]->name) . '</p>';
+                $html .= '<p class="font-poppins fs-p text-white">Tipo proyecto: ' . esc_html($sector_terms[0]->name) . '</p>';
             $year_terms = get_the_terms(get_the_ID(), 'ano');
             if ($year_terms && !is_wp_error($year_terms)) {
                 $html .= '<p class="font-poppins fs-p text-white mb-12">Año: ' . esc_html($year_terms[0]->name) . '</p>';
