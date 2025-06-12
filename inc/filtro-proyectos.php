@@ -7,7 +7,7 @@ function filter_projects_callback() {
     
     $args = array(
         'post_type' => 'proyectos',
-        'posts_per_page' => 6,
+        'posts_per_page' => 100,
         'paged' => $page
     );
     
