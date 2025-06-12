@@ -154,7 +154,7 @@ export const initGaleriaSwipers = () => {
 			spaceBetween: 24,
 			centeredSlides: false,
 			autoplay: {
-				delay: 3000,
+				delay: 3000000,
 				disableOnInteraction: false,
 			},
 			speed: 500,

@@ -43,10 +43,10 @@ get_header();
       <!-- Filtro por año -->
       <div class="col-12 col-lg-4">
         <select name="year-filter" id="year-filter" class="form-select w-100 rounded-6 font-poppins fs-p fw-regular">
-          <option value="">Selecciona el año</option>
+          <option value="">Selecciona la etapa</option>
           <?php 
           $years = get_terms(array(
-            'taxonomy' => 'ano',
+            'taxonomy' => 'etapa',
             'hide_empty' => false
           ));
           
@@ -189,10 +189,10 @@ get_header();
                               <?php echo generar_image_responsive($imagen_id, 'custom-size', 'd-flex rounded-6 img-fluid', get_the_title()); ?>
                             <?php } ?>
                               <?php if($autor) { ?>
-                                  <a href="<?php echo $autor['url']?>" target="<?php echo $autor['target']?>" class="autor position-absolute font-poppins fs-p text-white fw-regular text-end"><?php echo $autor['title']; ?></a>
+                                  <a href="<?php echo $autor['url']?>" target="<?php echo $autor['target']?>" class="autor position-absolute font-poppins fs-p-small text-white fw-regular text-end">Autor: <?php echo $autor['title']; ?></a>
                               <?php } ?>
                               <?php if($nombre_proyecto) { ?>
-                                <a href="<?php echo $nombre_proyecto['url']?>" target="<?php echo $nombre_proyecto['target']?>" class="nombre-proyecto d-block font-poppins fs-p text-white fw-regular text-end"><?php echo $nombre_proyecto['title']; ?></a>
+                                <a href="<?php echo $nombre_proyecto['url']?>" target="<?php echo $nombre_proyecto['target']?>" class="nombre-proyecto position-absolute d-block font-poppins fs-p-small text-white fw-regular text-end">Nombre del proyecto: <?php echo $nombre_proyecto['title']; ?></a>
                               <?php } ?>
                           </div>
                         <?php endforeach; ?>

@@ -23,7 +23,7 @@ function filter_projects_callback() {
     
     if (!empty($year) && $year !== 'todos') {
         $tax_query[] = array(
-            'taxonomy' => 'ano',
+            'taxonomy' => 'etapa',
             'field' => 'slug',
             'terms' => $year
         );
@@ -103,12 +103,12 @@ function get_project_sectors() {
 }
 
 /**
- * Función para obtener los años disponibles
+ * Función para obtener los etapas disponibles
  */
 
 function get_project_years() {
     $terms = get_terms(array(
-        'taxonomy' => 'año',
+        'taxonomy' => 'etapa',
         'hide_empty' => true
     ));
     
@@ -116,16 +116,16 @@ function get_project_years() {
 }
 
 function registrar_taxonomias_proyecto() {
-    register_taxonomy('ano', 'proyectos', array(
+    register_taxonomy('etapa', 'proyectos', array(
         'hierarchical' => false,
         'labels' => array(
-            'name' => 'Años',
-            'singular_name' => 'Año'
+            'name' => 'Etapas',
+            'singular_name' => 'Etapa'
         ),
         'show_ui' => true,
         'show_admin_column' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'ano')
+        'rewrite' => array('slug' => 'etapa')
     ));
 
     register_taxonomy('sector', 'proyectos', array(

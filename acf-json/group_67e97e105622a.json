@@ -109,7 +109,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": "m²",
                     "maxlength": "",
                     "placeholder": "",
                     "prepend": "",
@@ -301,5 +301,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1749591578
+    "modified": 1749595542
 }
