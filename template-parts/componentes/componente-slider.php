@@ -46,7 +46,7 @@ $slides       = !empty($grupo_slider['slides']) ? $grupo_slider['slides'] : [];
                         <?php echo generar_image_responsive($imagen_id, 'custom-size', 'rounded-6 img-fluid',  $titulo); ?>
                       </div>
                       <?php if ($nombre_proyecto) : ?>
-                        <p class="font-poppins fs-p-small text-primary text-lg-start text-center mb-lg-0 mb-24"><?php echo esc_html($nombre_proyecto); ?></p>
+                        <p class="font-poppins fs-p-small text-primary text-lg-start text-center mb-lg-0 mb-24"><?php echo $nombre_proyecto; ?></p>
                       <?php endif; ?>
                     </div>
                   </div>
