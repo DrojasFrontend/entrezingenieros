@@ -65,9 +65,9 @@ function filter_projects_callback() {
             }
             
             $html .= '<div class="line line-blanca mb-24"></div>';
-            $html .= '<button type="button" class="d-flex align-center gap-12 p-0 fs-3 text-white bg-transparent border-0 fw-medium" data-bs-toggle="modal" data-bs-target="#modalProyecto-' . get_the_ID() . '">';
+            $html .= '<a href="' . get_the_permalink() . '" type="button" class="d-flex align-center gap-12 p-0 fs-3 text-white bg-transparent border-0 fw-medium">';
             $html .= 'Ver proyecto <i class="customIcono customIcono-flecha-blanca"></i>';
-            $html .= '</button></div></article></div>';
+            $html .= '</a></div></article></div>';
             
             $key++;
         }

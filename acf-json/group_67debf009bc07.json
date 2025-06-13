@@ -168,11 +168,11 @@
                             "parent_repeater": "field_67dec08a102b7"
                         },
                         {
-                            "key": "field_67dec04b102b5",
-                            "label": "Nombre del proyecto",
-                            "name": "nombre_proyecto",
+                            "key": "field_684b77fb20bc1",
+                            "label": "Autor",
+                            "name": "autor",
                             "aria-label": "",
-                            "type": "text",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -182,10 +182,31 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "maxlength": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
+                            "parent_repeater": "field_67dec08a102b7"
+                        },
+                        {
+                            "key": "field_67dec04b102b5",
+                            "label": "Nombre del proyecto",
+                            "name": "nombre_proyecto",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0,
                             "parent_repeater": "field_67dec08a102b7"
                         }
                     ]
@@ -1164,5 +1185,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1743443147
+    "modified": 1749776400
 }

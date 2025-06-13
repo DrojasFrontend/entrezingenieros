@@ -203,8 +203,10 @@ main {
 	opacity: 1;
 }
 
-.modal-dialog {
-	max-width: 100% !important;
+.modal {
+	&-dialog {
+		max-width: 100% !important;
+	}
 }
 
 .visually-hidden {
@@ -830,12 +832,27 @@ main {
 			@extend .bg-primary, .py-6, .px-18, .rounded-6;
 		}
 
-		ul { 
+		ul {
 			@extend .ps-24;
 		}
 
 		li {
 			list-style: disc;
+		}
+
+		.swiper-pagination-bullet {
+			width: 4px;
+			height: 3px;
+			margin: 0 2px !important;
+
+			@media only screen and (min-width: 1024px) {
+				width: 8px;
+				margin: 0 2px !important;
+			}
+
+			&-active {
+				width: 16px;
+			}
 		}
 	}
 
@@ -872,7 +889,8 @@ main {
 			@extend .rounded, .shadow-card;
 		}
 
-		ul, ol {
+		ul,
+		ol {
 			@extend .ps-24, .mb-24;
 
 			li {
@@ -893,6 +911,7 @@ main {
 			ul {
 				@extend .ps-36, .mb-12;
 			}
+
 			li {
 				@extend .font-poppins, .fs-p, .fw-regular;
 				list-style: disc;
@@ -965,4 +984,19 @@ main {
 		@extend .text-primary, .py-6, .px-12, .rounded-3;
 		border: 1px solid #063f5c;
 	}
+}
+
+.heroSwiper {
+	.autor {
+		font-size: 10px !important;
+		right: 20px;
+		bottom: 20px;
+		@extend .bg-primary, .py-6, .px-18, .rounded-6;
+	}
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #fff;
+    color: #fff;
+    width: max-content;
 }

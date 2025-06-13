@@ -36,17 +36,23 @@ $slides       = !empty($grupo_slider['slides']) ? $grupo_slider['slides'] : [];
             <?php if (!empty($slides)) { ?>
               <?php foreach ($slides as $slide) { 
                 $imagen_id        = !empty($slide['imagen']['ID']) ? intval($slide['imagen']['ID']) : '';
+                $autor_proyecto   = !empty($slide['autor']) ? $slide['autor'] : '';
                 $nombre_proyecto  = !empty($slide['nombre_proyecto']) ? $slide['nombre_proyecto'] : '';
               ?>
                 <div class="swiper-slide">
                   <div class="row flex-lg-row flex-column-reverse wow fadeInUp" data-wow-delay="1.4s">
                     
                     <div class="ps-lg-84 customImgHover">
-                      <div class="d-flex mb-18 overflow-hidden rounded">
+                      <div class="position-relative d-flex mb-18 overflow-hidden rounded">
                         <?php echo generar_image_responsive($imagen_id, 'custom-size', 'rounded-6 img-fluid',  $titulo); ?>
+                        <?php if ($autor_proyecto) : ?>
+                          <?php if($autor_proyecto != 'Autor: Entrez') { ?>
+                            <div class="autor position-absolute font-poppins fs-p-small text-white text-lg-start text-center mb-lg-0"><?php echo $autor_proyecto; ?></div>
+                          <?php } ?>
+                        <?php endif; ?>
                       </div>
                       <?php if ($nombre_proyecto) : ?>
-                        <p class="font-poppins fs-p-small text-primary text-lg-start text-center mb-lg-0 mb-24"><?php echo $nombre_proyecto; ?></p>
+                        <div class="font-poppins fs-p-small text-primary text-lg-start text-center mb-lg-0 mb-24"><?php echo $nombre_proyecto; ?></div>
                       <?php endif; ?>
                     </div>
                   </div>

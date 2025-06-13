@@ -58,29 +58,33 @@ $direcciones            = !empty($grupo_ubicacion['direcciones']) ? $grupo_ubica
                             $waze       = !empty($direccion['waze']) ? $direccion['waze'] : '';
                             $google_map = !empty($direccion['google_map']) ? $direccion['google_map'] : '';
                             ?>
-                                <div class="col-12 col-lg-6 mb-lg-24 mb-12">
-                                    <?php if ($detalle) : ?>
-                                        <div class="font-poppins mb-12">
-                                            <?php echo $detalle; ?>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                            <?php if ($detalle) : ?>
+                                                <div class="font-poppins mb-12">
+                                                    <?php echo $detalle; ?>
+                                                </div>
+                                            <?php endif; ?>
                                         </div>
-                                    <?php endif; ?>
-                                    <div>
-                                        <?php if ($waze) : ?>
-                                            <div class="d-flex align-center gap-12 mb-12">
-                                                <i class="customIcono customIcono-waze"></i>
-                                                <a href="<?php echo $waze; ?>" class="fs-p fw-regular text-primary">
-                                                Ir con Waze
-                                            </a>
-                                            </div>
-                                        <?php endif; ?>
-                                        <?php if ($google_map) : ?>
-                                            <div class="d-flex align-center gap-12">
-                                                <i class="customIcono customIcono-ubicacion"></i>
-                                                <a href="<?php echo $google_map; ?>" class="fs-p fw-regular text-primary">
-                                                Ver en Google Maps
+                                        <div class="col-12 col-lg-5">
+                                            <?php if ($waze) : ?>
+                                                <div class="d-flex align-center gap-12 mb-12">
+                                                    <i class="customIcono customIcono-waze"></i>
+                                                    <a href="<?php echo $waze; ?>" class="fs-p fw-regular text-primary">
+                                                    Ir con Waze
                                                 </a>
-                                            </div>
-                                        <?php endif; ?>
+                                                </div>
+                                            <?php endif; ?>
+                                            <?php if ($google_map) : ?>
+                                                <div class="d-flex align-center gap-12">
+                                                    <i class="customIcono customIcono-ubicacion"></i>
+                                                    <a href="<?php echo $google_map; ?>" class="fs-p fw-regular text-primary">
+                                                    Ver en Google Maps
+                                                    </a>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
                                     </div>
                                 </div>
                             <?php endforeach; ?>

@@ -130,57 +130,39 @@ export const initApoyamosSwiper = () => {
 	});
 };
 
-export const initGaleriaSwipers = () => {
-	const modals = document.querySelectorAll('.modal');
-
-	modals.forEach(modal => {
-		const modalId = modal.getAttribute('id');
-		const postId = modalId.replace('modalProyecto-', '');
-
-		const galeriaSwiperEl = modal.querySelector('.galeriaSwiper');
-		if (!galeriaSwiperEl) return;
-
-		// Destruir Swiper anterior si existe
-		if (galeriaSwiperEl.swiper) {
-			galeriaSwiperEl.swiper.destroy(true, true);
+export const initGaleriaSwiper = () => {
+	const swiper = new Swiper(".galeriaSwiper", {
+		modules: [Pagination, Navigation, Autoplay],
+		slidesPerView: 1,
+		spaceBetween: 24,
+		centeredSlides: false,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		speed: 500,
+		loop: true,
+		navigation: {
+			nextEl: ".swiper-button-next-galeria",
+			prevEl: ".swiper-button-prev-galeria",
+			clickable: true,
+		},
+		pagination: {
+			el: ".swiper-pagination-galeria",
+			type: "bullets",
+			clickable: true,
 		}
-
-		const slidesCount = galeriaSwiperEl.querySelectorAll('.swiper-slide').length;
-		const useLoop = slidesCount > 1;
-
-		const swiper = new Swiper(galeriaSwiperEl, {
-			modules: [Pagination, Navigation, Autoplay],
-			slidesPerView: 1,
-			spaceBetween: 24,
-			centeredSlides: false,
-			autoplay: {
-				delay: 3000000,
-				disableOnInteraction: false,
-			},
-			speed: 500,
-			loop: useLoop,
-			navigation: {
-				nextEl: `.swiper-button-next-galeria-${postId}`,
-				prevEl: `.swiper-button-prev-galeria-${postId}`,
-				clickable: true,
-			},
-			pagination: {
-				el: `.swiper-pagination-galeria-${postId}`,
-				type: "bullets",
-				clickable: true,
-			}
-		});
 	});
 };
 
+// Inicialización de Swipers
 document.addEventListener('DOMContentLoaded', function () {
-	initGaleriaSwipers();
-
-	document.querySelectorAll('.modal').forEach(modal => {
-		modal.addEventListener('shown.bs.modal', function () {
-			initGaleriaSwipers();
-		});
-	});
+	initHeroSwiper();
+	initBlogSwiper();
+	initClientesSwiper();
+	initApoyamosSwiper();
+	initGaleriaSwiper();
+	initEquipoSwiper();
 });
 
 export const initEquipoSwiper = () => {
