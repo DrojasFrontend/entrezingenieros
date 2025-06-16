@@ -996,7 +996,17 @@ main {
 }
 
 .wpcf7 form.sent .wpcf7-response-output {
-    border-color: #fff;
-    color: #fff;
-    width: max-content;
+	border-color: #fff;
+	color: #fff;
+	width: max-content;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+	border-color: #fff;
+	color: #fff;
+	width: max-content;
+	font-size: 11px;
+	font-weight: 400;
 }
