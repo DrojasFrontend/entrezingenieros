@@ -85,8 +85,8 @@ $servicios_query = new WP_Query($args);
                       </div>
                     </div>
                     <?php if (!empty($tab['cta'])) : ?>
-                      <a href="<?php echo $tab['cta']; ?>" class="btn btn-primary m-auto">
-                        Hablemos de tu proyecto
+                      <a href="<?php echo $tab['cta']['url']; ?>" class="btn btn-primary m-auto" target="<?php echo $tab['cta']['target']; ?>" title="<?php echo $tab['cta']['title']; ?>">
+                        <?php echo $tab['cta']['title']; ?>
                       </a>
                     <?php endif; ?>
                   </div>
