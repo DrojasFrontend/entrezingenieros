@@ -57,11 +57,16 @@ function filter_projects_callback() {
             
             $sector_terms = get_the_terms(get_the_ID(), 'sector');
             if ($sector_terms && !is_wp_error($sector_terms)) {
-                $html .= '<p class="font-poppins fs-p text-white">Tipo proyecto: ' . esc_html($sector_terms[0]->name) . '</p>';
+                $sector_names = array();
+                foreach ($sector_terms as $term) {
+                    $sector_names[] = esc_html($term->name);
+                }
+                $html .= '<p class="font-poppins fs-p text-white">Tipo proyecto: ' . implode(', ', $sector_names) . '</p>';
+            }
+            
             $year_terms = get_the_terms(get_the_ID(), 'ano');
             if ($year_terms && !is_wp_error($year_terms)) {
                 $html .= '<p class="font-poppins fs-p text-white mb-12">Año: ' . esc_html($year_terms[0]->name) . '</p>';
-            }
             }
             
             $html .= '<div class="line line-blanca mb-24"></div>';
