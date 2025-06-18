@@ -24,7 +24,7 @@ get_header();
       <!-- Filtro por sector -->
       <div class="col-12 col-lg-4">
         <select name="sector-filter" id="sector-filter" class="form-select w-100 rounded-6 font-poppins fs-p fw-regular">
-          <option value="">Selecciona un sector</option>
+          <option value="">Selecciona el tipo de proyecto</option>
           <?php 
             $sectors = get_terms(array(
               'taxonomy' => 'sector',
