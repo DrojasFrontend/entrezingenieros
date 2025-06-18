@@ -141,7 +141,7 @@ export const initGaleriaSwiper = () => {
 			disableOnInteraction: false,
 		},
 		speed: 500,
-		loop: true,
+		loop: false,
 		navigation: {
 			nextEl: ".swiper-button-next-galeria",
 			prevEl: ".swiper-button-prev-galeria",
