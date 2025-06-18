@@ -1022,3 +1022,10 @@ main {
 	width: auto;
 	font-size: 14px;
 }
+
+.page-template-template-contacto .wpcf7 form.invalid .wpcf7-response-output, 
+.page-template-template-contacto .wpcf7 form.payment-required .wpcf7-response-output, 
+.page-template-template-contacto .wpcf7 form.unaccepted .wpcf7-response-output {
+	border-color: #083f5c;
+    color: #083f5c;
+}
