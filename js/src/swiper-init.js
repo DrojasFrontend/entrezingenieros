@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 export const initEquipoSwiper = () => {
 	const swiper = new Swiper(".equipoSwiper", {
-		modules: [Pagination, Navigation],
+		modules: [Pagination, Navigation, Autoplay],
 		slidesPerView: 1.3,
 		spaceBetween: 24,
 		centeredSlides: false,

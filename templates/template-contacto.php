@@ -71,7 +71,7 @@ $direcciones            = !empty($grupo_ubicacion['direcciones']) ? $grupo_ubica
                                             <?php if ($waze) : ?>
                                                 <div class="d-flex align-center gap-12 mb-12">
                                                     <i class="customIcono customIcono-waze"></i>
-                                                    <a href="<?php echo $waze; ?>" class="fs-p fw-regular text-primary">
+                                                    <a href="<?php echo $waze; ?>" class="fs-p fw-regular text-primary" target="_blank" rel="noopener noreferrer" title="Ir con Waze">
                                                     Ir con Waze
                                                 </a>
                                                 </div>
@@ -79,7 +79,7 @@ $direcciones            = !empty($grupo_ubicacion['direcciones']) ? $grupo_ubica
                                             <?php if ($google_map) : ?>
                                                 <div class="d-flex align-center gap-12">
                                                     <i class="customIcono customIcono-ubicacion"></i>
-                                                    <a href="<?php echo $google_map; ?>" class="fs-p fw-regular text-primary">
+                                                    <a href="<?php echo $google_map; ?>" class="fs-p fw-regular text-primary" target="_blank" rel="noopener noreferrer" title="Ver en Google Maps">
                                                     Ver en Google Maps
                                                     </a>
                                                 </div>

@@ -61,17 +61,18 @@ $slides       = !empty($grupo_slider['slides']) ? $grupo_slider['slides'] : [];
             <?php } ?>
           </div>
         </div>
+        <div class="d-flex align-center justify-lg-end justify-center mt-lg-0 mt-24 mb-lg-0 mb-24 gap-12 wow fadeInUp" data-wow-delay="1.6s" data-wow-offset="10">
+          <div class="customButtonSwiper swiper-button-prev">
+            <i class="customIcono customIcono-arrow"></i>
+          </div>
+          <div class="customPaginacionSwiper swiper-pagination"></div>
+          <div class="customButtonSwiper swiper-button-next">
+            <i class="customIcono customIcono-arrow customIcono-invertido"></i>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="d-flex align-center justify-lg-end justify-center mt-lg-0 mt-24 gap-12 wow fadeInUp" data-wow-delay="1.6s" data-wow-offset="10">
-      <div class="customButtonSwiper swiper-button-prev">
-        <i class="customIcono customIcono-arrow"></i>
-      </div>
-      <div class="customPaginacionSwiper swiper-pagination"></div>
-      <div class="customButtonSwiper swiper-button-next">
-        <i class="customIcono customIcono-arrow customIcono-invertido"></i>
-      </div>
-    </div>
+    
   </div>
 </section>
 <div class="line wow fadeInUp" data-wow-delay="1.7s"></div>
