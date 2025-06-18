@@ -916,6 +916,10 @@ main {
 				@extend .font-poppins, .fs-p, .fw-regular;
 				list-style: disc;
 			}
+
+			p {
+				@extend .mb-12;
+			}
 		}
 	}
 }
