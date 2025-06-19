@@ -42,7 +42,7 @@ get_header();
 
                     <?php if($servicios) { ?>
                       <div class="font-poppins fs-p text-white mb-18">
-                        <span class="fw-semibold">Servicios:</span>
+                        <span class="fw-semibold">Servicios prestados:</span>
                         <?php echo $servicios; ?>
                       </div>
                     <?php } ?>

@@ -24,7 +24,7 @@
         <div class="col-12 col-lg-6">
           <div class="d-flex rounded overflow-hidden shadow-card">
             <?php if (has_post_thumbnail()) : ?>
-              <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
+              <img class="img-fluid" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="<?php echo esc_attr(get_the_title()); ?>">
             <?php else : ?>
               <img class="img-fluid" src="<?php echo THEME_IMG . 'image-placeholder.webp'?>" alt="<?php echo esc_attr(get_the_title()); ?>">
             <?php endif; ?>

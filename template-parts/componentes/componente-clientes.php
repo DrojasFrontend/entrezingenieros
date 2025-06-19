@@ -2,7 +2,7 @@
 $sitename      = get_bloginfo('name');
 $grupo_galeria = get_field("grupo_galeria");
 $titulo        = !empty($grupo_galeria['titulo']) ? esc_html($grupo_galeria['titulo']) : "";
-$itmes          = !empty($grupo_galeria['items']) ? $grupo_galeria['items'] : [];
+$itmes         = !empty($grupo_galeria['items']) ? $grupo_galeria['items'] : [];
 ?>
 <section class="py-54">
   <div class="px-18">
