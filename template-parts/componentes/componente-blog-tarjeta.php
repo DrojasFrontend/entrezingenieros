@@ -17,7 +17,7 @@
   <h3 class="fs-3 mb-12"><?php echo esc_html(get_the_title()); ?></h3>
   <p class="font-poppins fs-p mb-12"><?php echo esc_html(get_the_excerpt()); ?></p>
   <p class="font-poppins fs-p-small mb-24">
-    Publicado el: <?php echo get_the_date('j \d\e F'); ?> - 6 minutos de lectura
+    <span>Publicado el:</span> <?php echo get_the_date('j \d\e F'); ?> - <span>6 minutos de lectura</span>
   </p>
   <a href="<?php the_permalink(); ?>" class="d-flex align-center gap-12 text-primary">
     Leer noticia
