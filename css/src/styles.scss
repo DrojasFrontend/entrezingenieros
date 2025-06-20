@@ -1030,3 +1030,9 @@ main {
     color: #083f5c;
 	width: auto;
 }
+
+.trp-language-switcher-container {
+	@media only screen and (min-width: 992px) {
+		display: none !important;
+	}
+}
