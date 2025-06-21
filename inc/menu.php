@@ -27,7 +27,7 @@ class Menu_Simple_Personalizado extends Walker_Nav_Menu {
         
         $class_names = join(' ', array_filter($custom_classes));
         
-        $output .= "<li class='menu-link d-flex align-center hover-menu py-lg-0 py-6" . esc_attr($class_names) . "'>";
+        $output .= "<li class='menu-link d-flex align-center hover-menu py-lg-0 py-6 " . esc_attr($class_names) . "'>";
         
         if ($item->url && $item->url != '#') {
             $output .= '<a class="position-relative font-poppins fs-xl-p fs-lg-p-small fs-5 fw-lg-regular fw-light text-primary customHoverLink" href="' . $item->url . '">';

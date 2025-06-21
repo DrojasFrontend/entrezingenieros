@@ -1017,22 +1017,35 @@ main {
 }
 
 .page-template-template-contacto .wpcf7 form.sent .wpcf7-response-output {
-    border-color: #083f5c;
-    color: #083f5c;
+	border-color: #083f5c;
+	color: #083f5c;
 	width: auto;
 	font-size: 14px;
 }
 
-.page-template-template-contacto .wpcf7 form.invalid .wpcf7-response-output, 
-.page-template-template-contacto .wpcf7 form.payment-required .wpcf7-response-output, 
+.page-template-template-contacto .wpcf7 form.invalid .wpcf7-response-output,
+.page-template-template-contacto .wpcf7 form.payment-required .wpcf7-response-output,
 .page-template-template-contacto .wpcf7 form.unaccepted .wpcf7-response-output {
 	border-color: #083f5c;
-    color: #083f5c;
+	color: #083f5c;
 	width: auto;
 }
 
 .trp-language-switcher-container {
 	@media only screen and (min-width: 992px) {
 		display: none !important;
+	}
+}
+
+.translate {
+	justify-content: flex-end;
+	font-size: 10px !important;
+
+	a {
+		font-size: 14px !important;
+		background: #083f5c;
+		color: #fff !important;
+		padding: 2px 10px;
+		border-radius: 5px;
 	}
 }
